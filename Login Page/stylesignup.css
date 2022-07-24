@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Manrope:wght@200&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+u {
+    color: black;
+}
+h1 {
+    color: black;
+    text-align: center;
+}
+
+#top-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    background-color: whitesmoke;
+    border-radius: 15px;
+    justify-content: center;
+    padding: 2vw 5vw;
+}
+
+
+button {
+    border: none;
+    background-color: green;
+    color: white;
+    margin: 10px;
+    padding: 5px 8px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: rgb(147, 15, 235);
+    cursor: pointer;
+}
+
+button:active {
+    transform: translate(0, 0.3rem);
+}
+
+.btnnxt {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+input {
+    width: 100%;
+    font-family: 'Manrope', sans-serif;
+    padding: 5px 5px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+label{
+    font-family: 'Manrope', sans-serif;
+}
+
+h2 {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 2000;
+}

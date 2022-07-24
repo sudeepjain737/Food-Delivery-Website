@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compaible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="styel.css">
+    <script src="file.js"></script>
+</head>
+
+<body>
+
+    <div id="top-logo">
+        <img src="../logo.png" alt="">
+    </div>
+    <div class="cont">
+        <div class="cont-1" id="add">
+            <p style="text-align: center;">Delivery Address</p>
+            <div id="detailsadd">
+                <input type="text" placeholder="Address" id="address">
+                <br>
+                <br>
+                <input type="text" placeholder="Flat no." id="flat">
+                <br>
+                <br>
+                <input type="tel" placeholder="Phone no." id="phone">
+                <br>
+                <br>
+                <button class="btn" onclick="save()">Save</button>
+            </div>
+        </div>
+
+        <div class="cont-1" id="pay">
+            <p style="text-align: center;">Payment Details</p>
+
+            <div class="wrapper">
+                <div class="outer-card">
+                    <div class="forms">
+                        <div class="input-items"> <span>Card Number</span><br><input placeholder=".... .... .... ...."
+                                data-slots="." data-accept="\d" size="19"> </div>
+                                <br>
+                        <div class="input-items"> <span>Name on card</span><br><input placeholder="Samuel Iscon"> </div>
+                        <br>
+                        <div class="one-line">
+                            <div class="input-items"> <span>Expiry Date</span> <br><input placeholder="mm/yyyy"
+                                    data-slots="my">
+                            </div>
+                            <br>
+                            <div class="input-items"> <span>CVV</span> <br><input placeholder="..." data-slots="."
+                                    data-accept="\d" size="3"> </div>
+                        </div>
+                        <br>
+                        <div class="input-buttons"> <a href="#">Save Changes</a> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

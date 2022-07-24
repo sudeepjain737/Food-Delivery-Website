@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGNUP PAGE</title>
+    <link rel="stylesheet" href="stylesignup.css">
+</head>
+
+<body>
+    <div id="top-logo">
+        <img src="../logo.png" alt="">
+    </div>
+    
+    <div class="container">
+        <form>
+            <h2 id="formhead">Sign up to FDelivery!</h2>
+            <label for="username"><b>USERNAME</b></label>
+            <br>
+            <input type="text" id="user" placeholder="username" name="username">
+            
+            <br><br>
+            <label for="pasword"><b>PASSWORD</b></label>
+            <br>
+            <input class="abc" autocomplete="new-password" type="password" placeholder="password" name="pasword">
+            <br><br>
+            <label for="con-pasword"><b>CONFIRM-PASSWORD</b></label>
+            <br>
+            <input class="abc" autocomplete="new-password" type="password" placeholder="confirm-password"
+                name="con-pasword">
+            <br><br>
+            <label for="id"><b>EMAIL-ID</b></label>
+            <br>
+            <input class="abc" type="text" name="id" placeholder="email-id">
+            <br><br>
+            <label for="ADD"><b>ADDRESS</b></label>
+            <br>
+            <input type="text" class="abc form-control" placeholder="address" name="ADD">
+            <br><br>
+            <button type="submit" onclick="display1()">SIGNUP</button>
+            <button type="submit"><a class="btnnxt" href="loginpage.html">Login</a></button>
+        </form>
+    </div>
+</body>
+<script>
+    function display1() {
+        if (document.getElementsByClassName('abc')[0].value === document.getElementsByClassName('abc')[1].value) {
+            localStorage.setItem(document.getElementById('user').value, document.getElementsByClassName('abc')[1].value);
+        }
+        else {
+            alert('PLEASE ENTER SAME PASSWORD');
+        }
+        // localStorage.clear();
+    }
+</script>
+
+</html>

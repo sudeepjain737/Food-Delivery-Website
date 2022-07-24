@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Manrope:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap');
+body {
+  background-image: url("f1.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  /* background-color: rgb(104, 234, 234); */
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20vh;
+  overflow: hidden;
+}
+.cont{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10vh;
+
+}
+img {
+  padding-top: 2.5vh;
+  padding-bottom: 2.5vh;
+}
+
+div {
+  text-align: center;
+  width: auto;
+}
+
+.cont-1 {
+  background-color: whitesmoke;
+  border-radius: 15px;
+  justify-content: center;
+  padding: 2vw;
+  width: 20%;
+  margin: auto;
+  margin-bottom: 5vh;
+}
+
+#top-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+button {
+  border: none;
+  background-color: green;
+  color: white;
+  margin: 10px;
+  padding: 5px 8px;
+  border-radius: 5px;
+}
+
+.input-buttons a{
+  text-decoration: none;
+  border: none;
+  background-color: green;
+  color: whitesmoke;
+  margin: 10px;
+  padding: 5px 8px;
+  border-radius: 5px;
+}
+
+input {
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 5px;
+  padding: auto;
+  text-align: center;
+}
+
+#pay, #add {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+#pay {
+  padding-bottom: 50px;
+}
+/* 
+#detailsadd {
+  text-align: center;
+  width: 20%;
+} */
+span {
+  font-family: 'Manrope', sans-serif;
+}
+
+button:hover, a:hover {
+  background-color: rgb(147, 15, 235);
+    cursor: pointer;
+}
+.input-items {
+  text-align: center;
+}
+
+
+@media screen and (max-width: 900px) {
+
+    body {
+      overflow: scroll;
+    }
+    .cont-1 {
+      width: 50vw;
+    }
+    .cont {
+      display: block;
+      margin: auto;
+      margin-top: 10vh;
+      
+    }
+
+    #pay, #add {
+      margin-top: 10vh;
+    }
+
+    #pay.cont-1 {
+      padding-bottom: 30px;
+    }
+    input {
+      transform: scale(0.7);
+    }
+
+
+
+}
+
+
+
+
+

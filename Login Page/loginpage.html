@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="stylesignup.css">
+</head>
+
+<body>
+    <div id="top-logo">
+        <img src="../logo.png" alt="">
+    </div>
+    <br><br>
+    <div class="container">
+        <form>
+            <h2>Login or sign up to start ordering</h2>
+            <label for="username"><b>USERNAME</b></label>
+            <br>
+            <input type="text" id="user" placeholder="username" name="username" required>
+            <br><br>
+            <label for="pasword"><b>PASSWORD</b></label>
+            <br>
+            <input class="abc" type="password" autocomplete="current-password" placeholder="password" name="pasword"
+                required>
+            <br><br>
+            <button type="button" onclick="display()">Login</button>
+            <button type="submit"><a class="btnnxt" href="signup.html">SignUp</a></button>
+        </form>
+    </div>
+    <script>
+        function display() {
+            const conf = document.getElementsByClassName('abc')[0].value;
+            if (conf === localStorage.getItem(document.getElementById('user').value)) {
+                console.log(document.getElementById('user').value + " " + conf);
+                window.location.href = '../FOODAPI/index.html';
+            }
+            else {
+                alert("not correct paasword OR SIGNUP");
+                return;
+            }
+        }
+    </script>
+</body>
+
+</html>
